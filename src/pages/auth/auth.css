@@ -10,14 +10,12 @@
     padding: 40px;
     width: 420px;
     max-width: 90%;
-    border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
 .auth-card input {
     width: 100%;
     padding: 12px;
-    border-radius: 10px;
     border: 1px solid #334155;
     background: #0f172a;
     color: white;
@@ -50,11 +48,14 @@
     width: 100%;
     padding: 14px;
     border: none;
-    border-radius: 30px;
     background: #6366f1;
     color: white;
     font-size: 16px;
     cursor: pointer;
+    border-top: 3px solid #60a5fa;
+    border-left: 3px solid #60a5fa;
+    border-bottom: 3px solid #34357e;
+    border-right: 3px solid #34357e;
 }
 
 .auth-card span {
@@ -65,7 +66,6 @@
 .error-msg {
     color: #f10f0f !important;
     padding: 5px;
-    border-radius: 6px;
     margin-top: 5px;
     font-size: 14px;
     display: none;

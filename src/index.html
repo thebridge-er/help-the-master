@@ -13,10 +13,9 @@
     <header>
         <nav class="nav">
             <div class="logo">
-                <a href="index.html">
-                    <div class="logo-icon"></div>
+                <a href="../../index.html">
+                    <h1>HTM</h1>
                 </a>
-                <h1>HTM</h1>
             </div>
 
             <div class="header-right">
@@ -27,16 +26,33 @@
 
     <section class="features">
         <h2 class="pixel-type">HELP THE MASTER!</h2>
-        <button class="login-btn" onclick="window.location = './pages/auth/auth.html'"></button>
-    </section>
+        <img id="boton" src="./img/boton1.png" alt="Botón">
 
-    <footer class="footer">
-        <p>
-            A veces un master necesita ayuda
-        </p>
-    </footer>
+        <footer class="footer">
+            <p>
+                A veces un master necesita ayuda
+            </p>
+        </footer>
 
-    <script type="module" src="../src/app.js"></script>
+        <script type="module" src="./js/global.js"></script>
+
+        <script type="module">
+            // Espera a que todo el DOM cargue
+            window.addEventListener("load", () => {
+                const boton = document.getElementById("boton");
+
+                boton.addEventListener("click", () => {
+                    // Cambia la imagen del botón
+                    boton.src = "img/boton2.png";
+
+                    // Espera 150ms antes de navegar para ver el efecto
+                    setTimeout(() => {
+                        // Navega a la otra página
+                        window.location.href = "pages/auth/auth.html";
+                    }, 150);
+                });
+            });
+        </script>
 </body>
 
 </html>

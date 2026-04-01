@@ -1,3 +1,5 @@
+
+
 import { generateExcuse } from './services/excusesGenerator.js';
 
 const form = document.getElementById("excuseForm");

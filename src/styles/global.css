@@ -2,10 +2,11 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../img/background-index.gif');
+    background-image: url('../img/background-index_1.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 /* HEADER */
@@ -81,6 +82,10 @@ body {
     font-size: 100px;
     color: #fff;
     text-align: center;
+}
+
+#boton {
+    width: 14rem;
 }
 
 /* FOOTER */

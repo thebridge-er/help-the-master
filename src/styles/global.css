@@ -32,9 +32,10 @@ body {
     font-family: 'Press Start 2P', Arial, sans-serif;
     text-decoration: none;
     cursor: pointer;
+    margin-left: 20px;
 }
 
-.header a {
+.nav a {
     text-decoration: none;
     min-height: 10px;
     min-width: 10px;
@@ -64,16 +65,21 @@ body {
     z-index: 100;
 }
 
+.login-btn {
+    background-color: rgb(101, 116, 116);
+    color: white;
+    margin-right: 20px;
+    font-family: 'Press Start 2P';
+    padding: 5px 10px;
+}
 
 /* IMAGEN DE FONDO */
 
 .features {
-    min-height: 75vh;
     padding: 50px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     flex: 1;
 }
 

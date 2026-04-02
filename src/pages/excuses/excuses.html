@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTM</title>
     <link rel="stylesheet" href="../../styles/global.css" />
-    <link rel="stylesheet" href="../dashboard/dashboard.css" />
+    <link rel="stylesheet" href="../excuses/excuses.css" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
@@ -20,6 +20,10 @@
                     <h1>HTM</h1>
                 </a>
             </div>
+
+            <div class="header-right">
+                <button class="login-btn" onclick="window.location = '../dashboard/dashboard.html'">Menú</button>
+            </div>
         </nav>
     </header>
 
@@ -28,32 +32,15 @@
         <div class="card">
             <h2>Crea un NPC</h2>
             <img class="card-gif" src="../../img/character1.png" alt="gif">
-            <button class="card-btn">
-                <img src="../../img/boton1.png" alt="botón">
-            </button>
         </div>
+        <div class="excuse-card">
 
-        <div class="card">
-            <h2>Crea un enemigo</h2>
-            <img class="card-gif" src="../../img/character1.png" alt="gif">
-            <button class="card-btn">
-                <img src="../../img/boton1.png" alt="botón">
-            </button>
-        </div>
+            <h2 id="formTitle">Explica la situación</h2>
 
-        <div class="card">
-            <h2>Crea el caos</h2>
-            <img class="card-gif" src="../../img/character1.png" alt="gif">
-            <button class="card-btn">
-                <img src="../../img/boton1.png" alt="botón">
-            </button>
-        </div>
+            <input id="situationField" placeholder="Situación" />
 
-        <div class="card">
-            <h2>Crea una escapatoria</h2>
-            <img class="card-gif" src="../../img/character1.png" alt="gif">
-            <button class="card-btn">
-                <img src="../../img/boton1.png" alt="botón">
+            <button id="mainBtn">
+                ¡Sácame de esta situación!
             </button>
         </div>
 
@@ -66,7 +53,9 @@
     </footer>
 
     <script type="module" src="./js/global.js"></script>
-    <script type="module" src="../src/dashboard.js"></script>
+    <script type="module" src="../../services/excusesgenerator.js"></script>
+    <script type="module" src="../../services/keywords.js"></script>
+
 
 </body>
 

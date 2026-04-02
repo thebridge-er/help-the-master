@@ -1,5 +1,5 @@
 export default class StorageManager {
-    static KEY = "tasukuDB";
+    static KEY = "htmDB";
 
     static load() {
         const data = localStorage.getItem(this.KEY);

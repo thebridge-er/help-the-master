@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!result.ok) {
             mostrarError(result.message)
+            return;
         }
 
         window.location.href = "../../pages/dashboard/dashboard.html"
@@ -53,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         formTitle.innerText = "Registrarse"
         nameField.style.display = "block"
-        mainBtn.innerText = "Registrarse"
+        mainBtn.innerText = "Enviar"
 
         switchText.innerHTML = `
         ¿Ya tienes cuenta?
@@ -68,9 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function mostrarLogin() {
         modo = "login"
 
-        formTitle.innerText = "Iniciar Sesión"
+        formTitle.innerText = "Login"
         nameField.style.display = "none"
-        mainBtn.innerText = "Iniciar Sesión"
+        mainBtn.innerText = "Iniciar sesión"
 
         switchText.innerHTML = `
         ¿No tienes cuenta?
@@ -88,13 +89,13 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function getDB() {
-    const raw = localStorage.getItem("tasukuDB")
+    const raw = localStorage.getItem("htmDB")
     if (!raw) return { users: [], spaces: [], tasks: [] }
     return JSON.parse(raw)
 }
 
 function saveDB(db) {
-    localStorage.setItem("tasukuDB", JSON.stringify(db))
+    localStorage.setItem("htmDB", JSON.stringify(db))
 }
 
 // ======================

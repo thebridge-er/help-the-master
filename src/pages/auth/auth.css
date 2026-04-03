@@ -39,12 +39,16 @@
     color: #94a3b8;
     margin-bottom: 10px;
     margin-top: 20px;
+    font-family: 'Press Start 2P';
+    font-size: 12px;
 }
 
 .auth-card label {
     display: block;
     margin-top: 15px;
     margin-bottom: 5px;
+    font-family: 'Press Start 2P';
+    font-size: 10px;
 }
 
 .auth-card button {
@@ -63,10 +67,28 @@
     border-right: 3px solid #46464b;
 }
 
+#mainBtn:hover {
+    background-color: rgb(87, 84, 84);
+    color: rgb(224, 224, 224);
+    font-family: 'Press Start 2P';
+    font-size: 16px;
+    cursor: pointer;
+    border-top: 3px solid #262629;
+    border-left: 3px solid #262629;
+    border-bottom: 3px solid #424446;
+    border-right: 3px solid #424446;
+}
+
 .auth-card span {
     color: #a1abb8;
     cursor: pointer;
     font-family: sans-serif;
+    font-family: 'Press Start 2P';
+}
+
+#registerLink {
+    color: #d0d4da;
+    text-decoration: underline;
 }
 
 #nameField {

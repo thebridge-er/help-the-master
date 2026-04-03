@@ -2,7 +2,6 @@
 .cards-section {
     display: flex;
     justify-content: center;
-    width: 90%;
     gap: 30px;
     padding: 40px;
     flex-wrap: wrap;
@@ -20,7 +19,10 @@
     align-items: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     text-align: center;
-    border: 5px solid rgb(211, 225, 235);
+    border-top: 8px solid #d0d4da;
+    border-left: 8px solid #d0d4da;
+    border-bottom: 8px solid #5f5f64;
+    border-right: 8px solid #5f5f64;
     margin: auto;
 }
 
@@ -40,17 +42,13 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    transition: all 0.15s ease;
 }
 
 .card-btn img {
     width: 200px;
     height: auto;
     transition: transform 0.2s ease;
-}
-
-.card-btn {
-    cursor: pointer;
-    transition: all 0.15s ease;
 }
 
 .card-btn:hover {

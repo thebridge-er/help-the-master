@@ -21,20 +21,7 @@ window.addEventListener("load", () => {
 
     boton.addEventListener("click", () => {
 
-        // 🔊 sonido
-        sonido.currentTime = 0;
-        sonido.play().catch(() => { });
-
-        // 💡 glow fuerte
         boton.style.filter = "drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #60a5fa)";
-
-        // 📳 vibración
-        if (navigator.vibrate) {
-            navigator.vibrate(100);
-        }
-
-        // 🔽 pulsado
-        boton.style.transform = "scale(0.9)";
 
         // ⏳ quitar efecto después
         setTimeout(() => {

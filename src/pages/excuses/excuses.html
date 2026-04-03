@@ -27,21 +27,21 @@
         </nav>
     </header>
 
-    <section class="cards-section">
+    <section class="cards-section excuses-section">
 
         <div class="card">
-            <h2>Crea un NPC</h2>
             <img class="card-gif" src="../../img/character1.png" alt="gif">
         </div>
-        <div class="excuse-card">
 
+        <div class="excuse-card">
             <h2 id="formTitle">Explica la situación</h2>
 
-            <input id="situationField" placeholder="Situación" />
+            <form id="excuseForm">
+                <textarea id="situationField" placeholder="Describe la situación..." rows="4"></textarea>
+                <button type="submit" id="mainBtn">¡Sácame de esta situación!</button>
+            </form>
 
-            <button id="mainBtn">
-                ¡Sácame de esta situación!
-            </button>
+            <div id="excuseOutput" class="excuse-output"></div>
         </div>
 
     </section>
@@ -52,7 +52,7 @@
         </p>
     </footer>
 
-    <script type="module" src="./js/global.js"></script>
+    <script type="module" src="../../js/global.js"></script>
     <script type="module" src="../../services/excusesgenerator.js"></script>
     <script type="module" src="../../services/keywords.js"></script>
 

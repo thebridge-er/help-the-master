@@ -1,6 +1,5 @@
-import { keywords, phrases } from './keyWords.js';
+import { keywords, phrases } from './keywords.js';
 
-// Función para detectar palabras clave
 export function detectKeywords(input) {
     const detected = [];
     for (const category in keywords) {
@@ -11,26 +10,24 @@ export function detectKeywords(input) {
     return detected;
 }
 
-// Función principal para generar excusa
 export async function generateExcuse(input) {
     const detected = detectKeywords(input);
+    if (detected.length === 0) {
+        return "No estoy seguro de qué pasó, intenta describir la situación de otra manera.";
+    }
 
-    // Traer un NPC aleatorio de la API DnD
-    const monstersRes = await fetch("https://www.dnd5eapi.co/api/monsters");
-    const monsters = await monstersRes.json();
-    const randomIndex = Math.floor(Math.random() * monsters.results.length);
-    const monsterUrl = "https://www.dnd5eapi.co" + monsters.results[randomIndex].url;
-    const monsterRes = await fetch(monsterUrl);
-    const monster = await monsterRes.json();
+    let excuseParts = [];
 
-    // Construir excusa
-    let excuse = `Durante el encuentro, ${monster.name} `;
+    // Para cada categoría detectada, elige una frase al azar
     detected.forEach(category => {
-        const phrase = phrases[category][Math.floor(Math.random() * phrases[category].length)];
-        excuse += phrase + ", ";
+        const phraseList = phrases[category];
+        if (phraseList && phraseList.length > 0) {
+            const randomIndex = Math.floor(Math.random() * phraseList.length);
+            excuseParts.push(phraseList[randomIndex]);
+        }
     });
 
-    // Quitar la última coma y espacio
-    excuse = excuse.slice(0, -2) + ".";
+    // Mezcla las frases en una sola excusa
+    const excuse = excuseParts.join(", ") + ".";
     return excuse;
 }

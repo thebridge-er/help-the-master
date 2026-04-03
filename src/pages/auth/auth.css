@@ -106,6 +106,15 @@
     color: white;
 }
 
+.login-btn {
+    background-color: rgb(101, 116, 116);
+    color: white;
+    margin-right: 20px;
+    font-family: 'Press Start 2P';
+    padding: 5px 10px;
+}
+
+
 @media (max-width: 768px) {
     .torch {
         display: none;

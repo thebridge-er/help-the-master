@@ -101,6 +101,52 @@
     color: white;
 }
 
+.excuses-section {
+    display: flex;
+    gap: 40px;
+    /* espacio entre divs */
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* para que baje en móvil */
+}
+
+.excuse-card textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: #a1abb8;
+    font-family: 'Press Start 2P', monospace;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+.excuse-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: rgb(112, 109, 109);
+    color: white;
+    font-family: 'Press Start 2P';
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.excuse-output {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    color: #a1abb8;
+    font-family: 'Press Start 2P', monospace;
+    white-space: pre-line;
+    /* respeta saltos de línea */
+    min-height: 60px;
+    /* asegura que haya espacio aunque esté vacío */
+}
+
 @media (max-width: 768px) {
     .torch {
         display: none;

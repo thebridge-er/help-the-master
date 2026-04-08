@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTM</title>
     <link rel="stylesheet" href="../../styles/global.css" />
-    <link rel="stylesheet" href="../excuses/excuses.css" />
+    <link rel="stylesheet" href="../npc-generator/npc-generator.css" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
@@ -27,21 +27,22 @@
         </nav>
     </header>
 
-    <section class="excuses-section">
+    <section class="npc-section">
 
         <div class="card">
-            <img class="card-gif" src="../../img/situacion.gif" alt="gif">
+            <img class="card-gif" src="../../img/npc.gif" alt="gif">
         </div>
 
-        <div class="excuse-card">
-            <h2 id="formTitle">Cuéntame qué ha pasado</h2>
+        <div class="npc-card">
 
-            <form id="excuseForm">
-                <textarea id="situationField" placeholder="Describe la situación..." rows="4"></textarea>
-                <button type="submit" id="mainBtn">¡Sácame de esta situación!</button>
-            </form>
+            <div class="npc-card">
+                <h2>NPC generado</h2>
 
-            <div id="excuseOutput" class="excuse-output"></div>
+                <div id="npcOutput"></div>
+
+                <button id="generateBtn">Generar otro NPC</button>
+                <button id="downloadBtn">Descargar ficha</button>
+            </div>
         </div>
 
     </section>
@@ -53,8 +54,7 @@
     </footer>
 
     <script type="module" src="../../js/global.js"></script>
-    <script type="module" src="../../services/excusesgenerator.js"></script>
-    <script type="module" src="../../services/keywords.js"></script>
+    <script type="module" src="./npc-generator.js"></script>
 
 </body>
 

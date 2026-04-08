@@ -3,12 +3,7 @@
     color: white;
 }
 
-.card-gif {
-    width: 350px;
-    padding-top: 20px;
-}
-
-.excuses-section {
+.npc-section {
     display: flex;
     flex: 1;
     height: 80%;
@@ -18,7 +13,7 @@
     flex-wrap: wrap;
 }
 
-.excuse-card textarea {
+.npc-card textarea {
     width: 95%;
     padding: 12px;
     border: 1px solid #334155;
@@ -29,7 +24,7 @@
     margin-bottom: 10px;
 }
 
-.excuse-card button {
+.npc-card button {
     width: 100%;
     padding: 12px;
     border: none;
@@ -41,14 +36,14 @@
     margin-bottom: 10px;
 }
 
-.excuse-output {
+.npc-output {
     margin-top: 10px;
     color: #a1abb8;
     font-family: 'Press Start 2P';
     white-space: pre-line;
 }
 
-.excuse-output {
+.npc-output {
     margin-top: 10px;
     padding: 12px;
     background-color: #0f172a;

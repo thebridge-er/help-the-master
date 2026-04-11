@@ -133,8 +133,7 @@ ENEMY --> RANDOM
 
 * Generador de misiones
 * Generador de ciudades
-* Generador de tabernas
-* Generador de encuentros
+* Inclusión de la IA para mejorar las respuestas de las situaciones y el caos
 * Modo oscuro
 * Más idiomas
 * Generador de personajes con imágenes

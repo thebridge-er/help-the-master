@@ -12,22 +12,5 @@ window.addEventListener("load", () => {
     });
 });
 
-window.addEventListener("load", () => {
-    const boton = document.querySelector(".animated-btn");
 
-    if (!boton) return;
-
-    const sonido = new Audio("../../sounds/click.mp3");
-
-    boton.addEventListener("click", () => {
-
-        boton.style.filter = "drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #60a5fa)";
-
-        // ⏳ quitar efecto después
-        setTimeout(() => {
-            boton.style.filter = "";
-            boton.style.transform = "";
-        }, 150);
-    });
-});
 

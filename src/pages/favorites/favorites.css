@@ -1,0 +1,79 @@
+.favorite-card {
+    background: #0f172a;
+    border: 1px solid #334155;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#formTitle {
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    color: white;
+}
+
+.enemy-section {
+    display: flex;
+    flex: 1;
+    height: 80%;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-gif {
+    width: 400px;
+}
+
+section {
+    flex-direction: row;
+}
+
+.stats-box {
+    background-color: rgba(15, 23, 42, 0.9);
+    border: 2px solid #334155;
+    padding: 15px;
+    margin-top: 10px;
+    font-family: 'Press Start 2P';
+    color: white;
+    margin-bottom: 20px;
+}
+
+.favorite-icon {
+    font-size: 22px;
+    color: #a1abb8;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.favorite-icon.active {
+    color: #ff4d4d;
+}
+
+.favorite-card {
+    background: #0f172a;
+    border: 1px solid #334155;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-icon {
+    cursor: pointer;
+    color: #a1abb8;
+    font-size: 18px;
+}
+
+.delete-icon:hover {
+    color: #ff4d4d;
+}
+
+@media (max-width: 768px) {
+    .card-gif {
+        width: 280px;
+    }
+}

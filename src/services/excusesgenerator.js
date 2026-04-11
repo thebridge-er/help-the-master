@@ -1,12 +1,15 @@
 import { keywords, phrases } from './keywords.js';
 
 export function detectKeywords(input) {
-    const detected = [];
+    const detected = {};
+    const lowerInput = input.toLowerCase();
+
     for (const category in keywords) {
-        if (keywords[category].some(word => input.toLowerCase().includes(word))) {
-            detected.push(category);
-        }
+        detected[category] = keywords[category].filter(word =>
+            lowerInput.includes(word.toLowerCase())
+        );
     }
+
     return detected;
 }
 
@@ -14,17 +17,32 @@ export async function generateExcuse(input) {
 
     const detected = detectKeywords(input);
 
-    if (detected.length === 0) {
-        return "No estoy seguro de qué pasó, intenta describir la situación de otra manera.";
-    }
+    const personaje = detected.personajes?.length
+        ? getRandom(detected.personajes)
+        : getRandom(keywords.personajes);
 
-    const personaje = getRandom(phrases.personajes);
+    const lugar = detected.lugares?.length
+        ? getRandom(detected.lugares)
+        : getRandom(keywords.lugares);
+
     const accion = getRandom(phrases.acciones);
-    const emocion = getRandom(phrases.emociones);
-    const lugar = getRandom(phrases.lugares);
     const consecuencia = getRandom(phrases.consecuencias);
 
-    return `El personaje ${personaje}, ${accion}, ${emocion}, ${lugar}, y ${consecuencia}.`;
+    const templates = [
+
+        `El ${personaje} ${accion}.`,
+
+        `Mientras estaban en ${lugar}, el ${personaje} ${accion}.`,
+
+        `El ${personaje} provocó un problema en ${lugar}.`,
+
+        `Todo empezó cuando el ${personaje} ${accion}.`,
+
+        `En ${lugar}, ${consecuencia}.`
+
+    ];
+
+    return getRandom(templates);
 }
 
 function getRandom(arr) {

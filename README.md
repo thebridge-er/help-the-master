@@ -3,7 +3,7 @@
 Help the master es una aplicación web creada para echar un cable a los DnD Master más novatos. 
 Ha sido desarrollado con **JavaScript**, **HTML5** y **CSS3**.
 
-![Demo Help The Master](./img/preview.gif)
+![Demo Help The Master](../src/img/preview.gif)
 
 ---
 

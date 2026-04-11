@@ -76,7 +76,10 @@ section {
     color: #a1abb8;
     font-family: 'Press Start 2P', monospace;
     white-space: pre-line;
+    overflow-y: auto;
     min-height: 60px;
+    max-width: 705px;
+    white-space: normal;
 }
 
 @media (max-width: 768px) {

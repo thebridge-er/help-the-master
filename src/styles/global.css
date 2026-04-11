@@ -65,6 +65,13 @@ section {
     z-index: 100;
 }
 
+.nav-heart {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin-right: 20px;
+}
+
 .login-btn {
     background-color: rgb(101, 116, 116);
     color: white;
@@ -107,6 +114,19 @@ h3.pixel-type {
 #boton {
     width: 15rem;
     cursor: pointer;
+}
+
+.favorite-icon {
+    font-size: 30px;
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.favorite-icon.active {
+    color: #ff4d4d;
 }
 
 /* FOOTER */

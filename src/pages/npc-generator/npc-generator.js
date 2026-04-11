@@ -1,3 +1,5 @@
+import { saveFavorite } from "../../services/favorites.js";
+
 const output = document.getElementById("npcOutput");
 const btn = document.getElementById("generateBtn");
 const downloadBtn = document.getElementById("downloadBtn");
@@ -156,3 +158,17 @@ function descargarNPC() {
 
 // generar uno al cargar
 generarNPC();
+
+const favoriteBtn = document.getElementById("npcFavorite");
+
+favoriteBtn.addEventListener("click", () => {
+
+    const text = document.getElementById("npcOutput").textContent;
+
+    if (!text) return;
+
+    saveFavorite("npc", text);
+
+    favoriteBtn.classList.toggle("active");
+
+});

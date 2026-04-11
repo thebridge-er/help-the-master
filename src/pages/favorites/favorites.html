@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTM</title>
     <link rel="stylesheet" href="../../styles/global.css" />
-    <link rel="stylesheet" href="../npc-generator/npc-generator.css" />
+    <link rel="stylesheet" href="../favorites/favorites.css" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -26,24 +26,11 @@
         </nav>
     </header>
 
-    <section class="npc-section">
+    <section class="favorites stats-box">
 
-        <div class="card">
-            <img class="card-gif" src="../../img/npc.gif" alt="gif">
-        </div>
+        <h2>Personajes Favoritos</h2>
 
-        <div class="npc-card">
-
-            <div class="npc-card">
-                <h2>Aquí tienes tu NPC:</h2>
-
-                <div class="stats-box" id="npcOutput"></div>
-
-                <button id="generateBtn">Generar otro NPC</button>
-                <button id="downloadBtn">Descargar ficha</button>
-                <i class="fa-solid fa-heart favorite-icon" id="npcFavorite"></i>
-            </div>
-        </div>
+        <div id="favoritesContainer"></div>
 
     </section>
 
@@ -54,7 +41,9 @@
     </footer>
 
     <script type="module" src="../../js/global.js"></script>
-    <script type="module" src="./npc-generator.js"></script>
+    <script type="module" src="./favorites.js"></script>
+    <script type="module" src="../../services/favorites.js"></script>
+
 
 </body>
 

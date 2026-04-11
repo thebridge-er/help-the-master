@@ -1,3 +1,19 @@
+import { saveFavorite } from "../../services/favorites.js";
+
+const favoriteBtn = document.getElementById("enemyFavorite");
+
+favoriteBtn.addEventListener("click", () => {
+
+    const text = document.getElementById("enemyOutput").textContent;
+
+    if (!text) return;
+
+    saveFavorite("enemy", text);
+
+    favoriteBtn.classList.toggle("active");
+
+});
+
 const output = document.getElementById("enemyOutput");
 const btn = document.getElementById("generateBtn");
 const downloadBtn = document.getElementById("downloadBtn");

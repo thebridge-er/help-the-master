@@ -3,7 +3,7 @@
 Help the master es una aplicación web creada para echar un cable a los DnD Master más novatos. 
 Ha sido desarrollado con **JavaScript**, **HTML5** y **CSS3**.
 
-![Snapshot de la pantalla de The Game of Life](./src/assets/snapshot.gif)
+![Demo Help The Master](./img/preview.gif)
 
 ---
 
@@ -20,6 +20,18 @@ Desde generación de NPCs hasta situaciones caóticas, esta herramienta está pe
 * **Generador de Excusas Narrativas:** Crea eventos narrativos coherentes con la historia para poder salir de un aprieto.
 * **Diseño Pixel Art:** Interfaz temática inspirada en RPG clásicos para los más nostálgicos.
 * **Uso rápido:** Pensado para utilizar durante partidas en vivo. Será como tener una pequeña chuleta.
+
+---
+
+## Instalación
+
+Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/thebridge-er/help-the-master.git
+```
 
 ---
 

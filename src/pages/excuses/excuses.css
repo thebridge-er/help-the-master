@@ -1,3 +1,8 @@
+section {
+    flex-direction: row;
+}
+
+
 #formTitle {
     font-family: 'Press Start 2P', Arial, sans-serif;
     color: white;

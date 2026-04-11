@@ -1,9 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+
 .auth {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    position: relative;
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .auth-card {
@@ -140,5 +155,9 @@
 @media (max-width: 768px) {
     .torch {
         display: none;
+    }
+
+    .auth-card {
+        width: 350px;
     }
 }

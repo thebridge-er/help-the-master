@@ -112,7 +112,7 @@ export const phrases = {
         "sus manos temblaban como gelatina",
         "intentaba mantener la calma pero fallaba estrepitosamente"
     ],
-    objetos_lugares: [
+    lugares: [
         "y rompió algo importante",
         "y encontró algo sorprendente",
         "y casi destruye todo a su alrededor",

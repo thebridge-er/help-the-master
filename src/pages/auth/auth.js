@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         formTitle.innerText = "Registrarse"
         nameField.style.display = "block"
-        mainBtn.innerText = "Enviar"
+        mainBtn.innerText = "Enviar  "
 
         switchText.innerHTML = `
         ¿Ya tienes cuenta?

@@ -1,12 +1,14 @@
-/* CONTENEDOR */
-.cards-section {
-    display: flex;
+main {
     justify-content: center;
-    gap: 30px;
-    padding: 40px;
-    flex-wrap: wrap;
-    margin-top: 90px;
+    align-items: center;
 }
+
+section {
+    flex-direction: row;
+}
+
+
+/* CONTENEDOR */
 
 .card {
     color: aliceblue;
@@ -55,6 +57,16 @@
     filter: drop-shadow(0 0 6px #60a5fa);
 }
 
+.cards-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    flex: 1;
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {

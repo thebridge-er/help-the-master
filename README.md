@@ -63,6 +63,7 @@ git clone https://github.com/thebridge-er/help-the-master.git
 ```
 .
 .
+doc
 src
 ├── index.html
 ├── styles/
@@ -72,6 +73,7 @@ src
 ├── services/
 │   ├── localStorage.js
 │   ├── excusesgenerator.js
+│   ├── favorites.js
 │   └── keywords.js
 ├── pages/
 │   ├── auth/
@@ -82,6 +84,10 @@ src
 │   │   ├── dashboard.js
 │   │   ├── dashboard.css
 │   │   └── dashboard.html
+├── favorites/
+│   │   ├── favorites.js
+│   │   ├── favorites.css
+│   │   └── favorites.html
 │   ├── npc-generator/
 │   │   ├── npc-generator.js
 │   │   ├── npc-generator.css
@@ -94,9 +100,9 @@ src
 │   │   ├── excuses.css
 │   │   └── excuses.html
 │   └── caos-generator/
-│   │   ├── caos-generator.js
-│   │   ├── caos-generator.css
-│   │   └── caos-generator.html
+│       ├── caos-generator.js
+│       ├── caos-generator.css
+│       └── caos-generator.html
 ├── img/
 └── README.md
 ```
@@ -129,7 +135,6 @@ ENEMY --> RANDOM
 * Generador de ciudades
 * Generador de tabernas
 * Generador de encuentros
-* Guardado de favoritos
 * Modo oscuro
 * Más idiomas
 * Generador de personajes con imágenes

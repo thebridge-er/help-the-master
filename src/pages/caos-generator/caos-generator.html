@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTM</title>
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../caos-generator/caos-generator.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <a href="../../index.html">
+                    <h1>HTM</h1>
+                </a>
+            </div>
+
+            <div class="header-right">
+                <button class="login-btn" onclick="window.location = '../dashboard/dashboard.html'">Menú</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="caos-section">
+
+        <div class="card">
+            <img class="card-gif" src="../../img/caos.gif" alt="gif">
+        </div>
+
+        <div class="caos-card">
+            <h2 id="formTitle">¿Te aburres?</h2>
+
+            <form id="caosForm">
+                <textarea id="caosField" placeholder="Describe quiénes estáis y dónde" rows="4"></textarea>
+                <button type="submit" id="mainBtn">¡Crea el caos!</button>
+            </form>
+
+            <div id="caosOutput" class="caos-output"></div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>
+            A veces un master necesita ayuda
+        </p>
+    </footer>
+
+    <script type="module" src="../../js/global.js"></script>
+    <script type="module" src="./caos-generator.js"></script>
+
+</body>
+
+</html>

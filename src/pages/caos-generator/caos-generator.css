@@ -1,9 +1,19 @@
+section {
+    flex-direction: row;
+}
+
+
 #formTitle {
     font-family: 'Press Start 2P', Arial, sans-serif;
     color: white;
 }
 
-.npc-section {
+.card-gif {
+    width: 350px;
+    padding-top: 20px;
+}
+
+.caos-section {
     display: flex;
     flex: 1;
     height: 80%;
@@ -13,31 +23,18 @@
     flex-wrap: wrap;
 }
 
-.card-gif {
-    width: 400px;
+.caos-card textarea {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: #a1abb8;
+    font-family: 'Press Start 2P', monospace;
+    resize: vertical;
+    margin-bottom: 10px;
 }
 
-section {
-    flex-direction: row;
-}
-
-.stats-box {
-    background-color: rgba(15, 23, 42, 0.9);
-    border: 2px solid #334155;
-    padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: 'Press Start 2P';
-    color: white;
-}
-
-.npc-card h2 {
-    font-family: 'Press Start 2P';
-    color: white;
-}
-
-
-.npc-card button {
+.caos-card button {
     width: 100%;
     padding: 12px;
     border: none;
@@ -53,7 +50,7 @@ section {
     margin-bottom: 10px;
 }
 
-.npc-card button:hover {
+.caos-card button:hover {
     width: 100%;
     padding: 12px;
     border: none;
@@ -69,14 +66,8 @@ section {
     margin-bottom: 10px;
 }
 
-.npc-output {
-    margin-top: 10px;
-    color: #a1abb8;
-    font-family: 'Press Start 2P';
-    white-space: pre-line;
-}
 
-.npc-output {
+.caos-output {
     margin-top: 10px;
     padding: 12px;
     background-color: #0f172a;
@@ -84,23 +75,16 @@ section {
     color: #a1abb8;
     font-family: 'Press Start 2P', monospace;
     white-space: pre-line;
+    height: 140px;
+    overflow-y: auto;
     min-height: 60px;
+    max-width: 600px;
+    white-space: normal;
 }
 
 @media (max-width: 768px) {
-    .torch {
-        display: none;
-    }
-
-    .excuses-section {
+    .caos-section {
         padding: 20px;
     }
 
-    .npc-section {
-        padding: 20px;
-    }
-
-    .card-gif {
-        width: 280px;
-    }
 }

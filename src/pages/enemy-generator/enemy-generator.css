@@ -28,12 +28,14 @@ section {
     margin-top: 10px;
     font-family: 'Press Start 2P';
     color: white;
+    margin-bottom: 20px;
 }
 
 .enemy-card h2 {
     font-family: 'Press Start 2P';
     color: white;
 }
+
 
 .enemy-card button {
     width: 100%;
@@ -44,8 +46,29 @@ section {
     font-family: 'Press Start 2P';
     font-size: 14px;
     cursor: pointer;
+    border-top: 3px solid #d0d4da;
+    border-left: 3px solid #d0d4da;
+    border-bottom: 3px solid #46464b;
+    border-right: 3px solid #46464b;
     margin-bottom: 10px;
 }
+
+.enemy-card button:hover {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: rgb(87, 84, 84);
+    color: white;
+    font-family: 'Press Start 2P';
+    font-size: 14px;
+    cursor: pointer;
+    border-top: 3px solid #262629;
+    border-left: 3px solid #262629;
+    border-bottom: 3px solid #424446;
+    border-right: 3px solid #424446;
+    margin-bottom: 10px;
+}
+
 
 .enemy-output {
     margin-top: 10px;

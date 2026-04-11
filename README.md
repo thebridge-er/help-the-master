@@ -18,7 +18,7 @@ Desde generación de NPCs hasta situaciones caóticas, esta herramienta está pe
 * **Generador de Enemigos:** Genera enemigos listos para combate rápidamente con sus puntos de vida aleatorios.
 * **Generador de Caos:** Introduce situaciones inesperadas para dinamizar la partida si estáis atascados o se está volviendo aburrida.
 * **Generador de Excusas Narrativas:** Crea eventos narrativos coherentes con la historia para poder salir de un aprieto.
-* **Diseño Pixel Art:** Interfaz temática inspirada en RPG clásicos para los más nostálgicos.
+* **Diseño Pixel Art:** Interfaz temática inspirada en RPG clásicos para los más nostálgicos. (El arte fue creado por la autora sin uso de IA, no suma puntos pero ahí lo dejo)
 * **Uso rápido:** Pensado para utilizar durante partidas en vivo. Será como tener una pequeña chuleta.
 
 ---

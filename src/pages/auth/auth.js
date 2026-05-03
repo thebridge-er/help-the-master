@@ -25,6 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
         errorMsg.classList.remove("show")
     }
 
+    function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
     function handleAuth() {
 
         limpiarError()
@@ -38,6 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (modo === "login") {
             result = window.loginUser(email, password)
         } else {
+
+            // 🔥 VALIDACIÓN EMAIL (AQUÍ VA)
+            if (!isValidEmail(email)) {
+                mostrarError("Email no válido")
+                return;
+            }
+
             result = window.registerUser(name, email, password)
         }
 
